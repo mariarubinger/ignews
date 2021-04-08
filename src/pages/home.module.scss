@@ -1,0 +1,48 @@
+.contentContainer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem); //esse -5rem porque o texto está centralizado na tela descontando o header
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; //porque eu quero que o texto fique totalemnte pra esquerda e a imagem fique totalmente pra direita
+}
+
+//estilização da <section>
+.hero {
+  max-width: 600px;
+
+  //Hey, welcome...
+  > span {
+    font-family: 1.5rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+
+    //o span que está dentro do h1 que é "React"
+    span {
+      color: var(--cyan-500);
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 1.5rem;
+    
+    span {
+      color: var(--cyan-500);
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 2.5rem;
+  }
+}
