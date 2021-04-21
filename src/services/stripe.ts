@@ -13,3 +13,5 @@ export const stripe = new Stripe(
     },
   }
 )
+
+//STRIPE_API_KEY é uma variável de ambiente secreta, ela não pode ficar pública
